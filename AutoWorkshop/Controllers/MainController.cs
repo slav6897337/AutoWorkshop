@@ -12,12 +12,12 @@ namespace AutoWorkshop.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MainController : ControllerBase
+    public class AutoWorkshopController : ControllerBase
     {
         private IRepairService RepairService { get; set; }
         private IBaseRepository<Document> Documents { get; set; }
 
-        public MainController(IRepairService repairService, IBaseRepository<Document> document)
+        public AutoWorkshopController(IRepairService repairService, IBaseRepository<Document> document)
         {
             RepairService = repairService;
             Documents = document;
